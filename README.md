@@ -38,9 +38,9 @@ Music is **original and generative** — *inspired by* historical languages, nev
 
 | Area | What you get |
 |------|----------------|
-| **Program** | Five composer cards — click = compose + play |
+| **Program** | Five composer cards first — **primary CTA, no scroll** — click = compose + play |
 | **Sound** | Real samples: piano / organ / violin+cello+contrabass |
-| **Education** | Era timeline · style classroom · techniques used *in this piece* |
+| **Education** | Style classroom + techniques *after* you pick; era timeline **below** the main event |
 | **Aesthetic** | Dark concert hall — gold, ivory, vignette |
 | **Privacy** | No account; optional lightweight visit counter (see below) |
 

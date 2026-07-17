@@ -5,8 +5,8 @@ export function EraTimeline() {
     <section className="era-timeline" aria-label="Musical eras">
       <h2 className="section-label">How eras differ</h2>
       <p className="section-hint">
-        Style is not just “classical.” Bach and Vivaldi share the Baroque era but
-        write differently; Mozart’s Classical clarity is not Chopin’s Romantic
+        After you’ve listened: style is not one “classical” sound. Bach and Vivaldi
+        share the Baroque era but write differently; Mozart’s clarity is not Chopin’s
         intimacy. Each card uses a <strong>dedicated style engine</strong> — not one
         generic generator with a name tag.
       </p>

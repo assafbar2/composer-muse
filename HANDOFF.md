@@ -78,26 +78,24 @@ Samples: [nbrosowsky/tonejs-instruments](https://github.com/nbrosowsky/tonejs-in
 
 ## 4. UX specification
 
-### 4.1 Visual / layout
+### 4.1 Visual / layout (CTA-first)
+
+**Rule:** The program (composer cards) must be visible without scrolling.
+Education is valuable but secondary — it lives *below* the main event.
 
 ```
 ┌─────────────────────────────────────────────────────────┐
-│  Header: “Composer Muse” + lede                         │
-│  Dark concert hall (vignette + soft stage lights)       │
+│  Compact hero: title + “Click a composer. Hear new.”    │
 ├─────────────────────────────────────────────────────────┤
-│  “How eras differ” — Baroque / Classical / Romantic     │  ← education
+│  THE PROGRAM — 5 cards  ← PRIMARY CTA (above the fold)  │
 ├─────────────────────────────────────────────────────────┤
-│  [Bach] [Vivaldi] [Mozart] [Beethoven] [Chopin] cards   │  ← click = generate
-├─────────────────────────────────────────────────────────┤
-│  Status: Loading samples… (when needed)                 │
+│  Status / errors                                        │
 ├──────────────────────────────┬──────────────────────────┤
 │  Player                      │  Style classroom         │
-│  title, form, key, tempo     │  Why X sounds different  │
-│  blurb, techniques list      │  Hallmarks / vs others   │
-│  Stop / Play again / Another │  Listen for…             │
 └──────────────────────────────┴──────────────────────────┘
-│  History: “This evening’s sketches”                     │
-│  Footer: original AI/generative inspired-by disclaimer  │
+│  History (if any)                                       │
+│  “How eras differ” — education (after main event)       │
+│  Footer + visit badge                                   │
 └─────────────────────────────────────────────────────────┘
 ```
 

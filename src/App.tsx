@@ -8,6 +8,15 @@ import { generateAndPlay, stopMusic } from "./music/engine";
 import type { GeneratedPiece } from "./music/types";
 import "./App.css";
 
+/**
+ * Layout priority (above the fold first):
+ * 1. Compact hero — one-line promise
+ * 2. The program (composer cards) — primary CTA, no scroll required
+ * 3. Player + style classroom — reaction after click
+ * 4. History
+ * 5. Era education — secondary, below the main event
+ * 6. Footer
+ */
 export default function App() {
   const [selectedId, setSelectedId] = useState<ComposerId | null>(null);
   const [generatingId, setGeneratingId] = useState<ComposerId | null>(null);
@@ -60,8 +69,6 @@ export default function App() {
 
   const handleReplay = async () => {
     if (!piece) return;
-    // Re-generate same composer for a true replay of style (new seed for variety on "compose another")
-    // For play again, re-run engine with new audio from same composer
     await compose(piece.composerId);
   };
 
@@ -74,15 +81,16 @@ export default function App() {
         <p className="eyebrow">Concert hall · generative studio</p>
         <h1>Composer Muse</h1>
         <p className="lede">
-          Click a composer. Hear something <em>new</em> — built from their era’s
-          rules, not a copy of a famous work. Each style has its own musical engine.
+          Click a composer. Hear something <em>new</em>.
         </p>
       </header>
 
-      <EraTimeline />
-
-      <section className="gallery" aria-label="Composers">
-        <h2 className="section-label">The program</h2>
+      {/* Primary CTA — immediate, above the fold */}
+      <section className="gallery" aria-label="The program — choose a composer">
+        <div className="gallery-heading">
+          <h2 className="section-label">The program</h2>
+          <p className="cta-hint">Pick anyone — music starts after a moment</p>
+        </div>
         <div className="gallery-grid">
           {COMPOSERS.map((c) => (
             <ComposerCard
@@ -140,6 +148,9 @@ export default function App() {
           </ul>
         </section>
       )}
+
+      {/* Education after the main event — still valuable, not blocking CTA */}
+      <EraTimeline />
 
       <footer className="footer">
         <p>
