@@ -1,0 +1,56 @@
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Source+Sans+3:wght@400;500;600&display=swap");
+
+:root {
+  --bg: #0a0806;
+  --bg-elevated: #14100c;
+  --ink: #e8e0d4;
+  --ink-muted: #a89880;
+  --ink-faint: #6b5e4e;
+  --ivory: #f3ebe0;
+  --gold: #c9a227;
+  --gold-dim: #8a7340;
+  --border: rgba(201, 162, 39, 0.18);
+  --font-display: "Cormorant Garamond", "Times New Roman", serif;
+  --font-body: "Source Sans 3", system-ui, sans-serif;
+
+  font-family: var(--font-body);
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--ink);
+  background-color: var(--bg);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  background: var(--bg);
+}
+
+body {
+  margin: 0;
+  min-height: 100svh;
+  background:
+    radial-gradient(ellipse 120% 80% at 50% 0%, #1a1510 0%, var(--bg) 55%),
+    var(--bg);
+}
+
+#root {
+  min-height: 100svh;
+}
+
+button {
+  -webkit-tap-highlight-color: transparent;
+}
+
+::selection {
+  background: rgba(201, 162, 39, 0.35);
+  color: var(--ivory);
+}
