@@ -4,7 +4,9 @@
 
 **Last updated:** 2026-07-17  
 **Repo path:** `/Users/assafbarnir/1Code/xai/composer-muse`  
-**Status:** Working web app — click composer → load samples → play generative piece in browser.
+**GitHub:** https://github.com/assafbar2/composer-muse (public)  
+**Live:** https://assafbar2.github.io/composer-muse/  
+**Status:** Working web app — click composer → load samples → play generative piece in browser. Hosted free on GitHub Pages.
 
 ---
 

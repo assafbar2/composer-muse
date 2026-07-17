@@ -594,6 +594,31 @@
   margin-inline: auto;
 }
 
+.footer-meta {
+  margin-top: 0.85rem !important;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.footer-meta a {
+  color: var(--gold-dim);
+  text-decoration: none;
+}
+
+.footer-meta a:hover {
+  color: var(--gold);
+  text-decoration: underline;
+}
+
+.visit-badge {
+  height: 18px;
+  vertical-align: middle;
+  opacity: 0.9;
+}
+
 .status-banner {
   background: rgba(201, 162, 39, 0.12);
   border: 1px solid rgba(201, 162, 39, 0.35);

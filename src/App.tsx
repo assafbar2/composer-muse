@@ -147,6 +147,27 @@ export default function App() {
           not reconstructions of specific works. Educational notes describe era and
           technique differences.
         </p>
+        <p className="footer-meta">
+          <a
+            href="https://github.com/assafbar2/composer-muse"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Source on GitHub
+          </a>
+          <span className="dot" aria-hidden>
+            ·
+          </span>
+          <span className="visit-wrap" title="Approximate public page views (free counter)">
+            <img
+              className="visit-badge"
+              src="https://hits.sh/assafbar2.github.io/composer-muse.svg?style=flat-square&label=visits&color=c9a227&labelColor=1a1510"
+              alt="Visit counter"
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+            />
+          </span>
+        </p>
       </footer>
     </div>
   );

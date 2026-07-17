@@ -1,7 +1,8 @@
-import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react'
+import { defineConfig } from "vite";
+import react from "@vitejs/plugin-react";
 
-// https://vite.dev/config/
+// GitHub Pages project site: https://assafbar2.github.io/composer-muse/
 export default defineConfig({
   plugins: [react()],
-})
+  base: "/composer-muse/",
+});
